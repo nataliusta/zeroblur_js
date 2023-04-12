@@ -6,7 +6,11 @@ function init() {
     }
 }
 
-function showAnswer() {
-    let image = document.getElementById('zero');
-    image.src = '../zeroblur_js/img/zero.jpg';
+function showAnswer(eventObj) {
+    let image = eventObj.target;
+    let name = image.id;
+    name = name + ' .jpg';
+    image.src = '../zeroblur_js/img/' + name;
 }
+
+// image.src = '../zeroblur_js/img/zero.jpg';
