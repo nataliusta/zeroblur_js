@@ -9,7 +9,7 @@ function init() {
 function showAnswer(eventObj) {
     let image = eventObj.target;
     let name = image.id;
-    name = name + ' .jpg';
+    name = name + '.jpg';
     image.src = '../zeroblur_js/img/' + name;
 }
 
