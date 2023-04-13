@@ -2,7 +2,8 @@ window.onload = init;
 function init() {
     let images = document.getElementsByTagName('img');
     for (i = 0; i < images.length; i++) {
-        images[i].onclick = showAnswer;
+        images[i].onmouseover = showAnswer;
+        images[i].onmouseout = reblur;
     }
 }
 
@@ -12,10 +13,11 @@ function showAnswer(eventObj) {
     name = name + '.jpg';
     image.src = '../zeroblur_js/img/' + name;
 
-    setTimeout(reblur, 2000, image);
+    //setTimeout(reblur, 2000, image);
 }
 
-function reblur(image) {
+function reblur(eventObj) {
+    let image = eventObj.target;
     let name = image.id;
     name = '../zeroblur_js/img/' + name + 'blur.jpg';
     image.src = name;
