@@ -13,4 +13,8 @@ function showAnswer(eventObj) {
     image.src = '../zeroblur_js/img/' + name;
 }
 
-// image.src = '../zeroblur_js/img/zero.jpg';
+function timerHandler() {
+    alert('Hellllooooooo');
+}
+
+setTimeout(timerHandler, 2000);
