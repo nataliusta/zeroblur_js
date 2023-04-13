@@ -15,8 +15,14 @@ function showAnswer(eventObj) {
     setTimeout(reblur, 2000, image);
 }
 
-function timerHandler() {
+function reblur(image) {
+    let name = image.id;
+    name = '../zeroblur_js/img/' + name + 'blur.jpg';
+    image.src = name;
+}
+
+/*function timerHandler() {
     alert('Lets play a game!');
 }
 
-setTimeout(timerHandler, 2000);
+setTimeout(timerHandler, 2000);*/
