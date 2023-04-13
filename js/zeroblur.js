@@ -11,10 +11,12 @@ function showAnswer(eventObj) {
     let name = image.id;
     name = name + '.jpg';
     image.src = '../zeroblur_js/img/' + name;
+
+    setTimeout(reblur, 2000, image);
 }
 
 function timerHandler() {
-    alert('Hellllooooooo');
+    alert('Lets play a game!');
 }
 
 setTimeout(timerHandler, 2000);
