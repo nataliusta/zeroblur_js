@@ -22,9 +22,3 @@ function reblur(eventObj) {
     name = '../zeroblur_js/img/' + name + 'blur.jpg';
     image.src = name;
 }
-
-/*function timerHandler() {
-    alert('Lets play a game!');
-}
-
-setTimeout(timerHandler, 2000);*/
