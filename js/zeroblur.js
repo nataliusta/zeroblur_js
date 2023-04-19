@@ -12,8 +12,6 @@ function showAnswer(eventObj) {
     let name = image.id;
     name = name + '.jpg';
     image.src = '../zeroblur_js/img/' + name;
-
-    //setTimeout(reblur, 2000, image);
 }
 
 function reblur(eventObj) {
